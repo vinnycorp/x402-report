@@ -12,6 +12,7 @@ const path = require('path');
 const GITHUB_SEARCH_QUERY = 'x402';
 const NEYNAR_BASE = 'https://api.neynar.com/v2/farcaster/cast/search';
 const OPENROUTER_BASE = 'https://openrouter.ai/api/v1/chat/completions';
+const GOOGLE_ALERTS_RSS = 'https://www.google.com/alerts/feeds/09297614996572350268/5624034197509829019';
 
 // --- Helpers ---
 function httpRequest(url, options = {}) {
@@ -300,6 +301,42 @@ Return ONLY the JSON array, no other text.`
   }
 }
 
+// --- Google Alerts RSS ---
+async function searchGoogleAlerts() {
+  console.log('📰 Fetching Google Alerts RSS...');
+
+  try {
+    const res = await httpRequest(GOOGLE_ALERTS_RSS);
+    if (res.status !== 200) {
+      console.log(`  ❌ RSS fetch failed: HTTP ${res.status}`);
+      return { source: 'google_alerts', articles: [], error: `HTTP ${res.status}` };
+    }
+
+    // Parse Atom XML entries
+    const entries = [];
+    const entryRegex = /<entry>([\s\S]*?)<\/entry>/g;
+    let match;
+    while ((match = entryRegex.exec(res.body)) !== null) {
+      const entry = match[1];
+      const title = (entry.match(/<title[^>]*>([\s\S]*?)<\/title>/) || [])[1]?.replace(/<\/?b>/g, '').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&').replace(/&#39;/g, "'") || '';
+      const link = (entry.match(/<link[^>]*href="([^"]*)"/) || [])[1]?.replace(/&amp;/g, '&') || '';
+      const published = (entry.match(/<published>([\s\S]*?)<\/published>/) || [])[1] || '';
+      const content = (entry.match(/<content[^>]*>([\s\S]*?)<\/content>/) || [])[1]?.replace(/<\/?b>/g, '').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&').replace(/&nbsp;/g, ' ').replace(/&#39;/g, "'") || '';
+
+      // Extract actual URL from Google redirect
+      const actualUrl = (link.match(/[?&]url=([^&]*)/) || [])[1] ? decodeURIComponent((link.match(/[?&]url=([^&]*)/) || [])[1]) : link;
+
+      entries.push({ title: title.trim(), url: actualUrl, published, snippet: content.trim() });
+    }
+
+    console.log(`  📰 Got ${entries.length} alerts`);
+    return { source: 'google_alerts', articles: entries };
+  } catch (err) {
+    console.log('  ❌ Google Alerts error:', err.message);
+    return { source: 'google_alerts', articles: [], error: err.message };
+  }
+}
+
 // --- Main ---
 async function main() {
   const dryRun = process.argv.includes('--dry-run');
@@ -307,16 +344,17 @@ async function main() {
 
   console.log(`\n🔍 x402 Intelligence Report — ${today}\n`);
 
-  const [github, farcaster, twitter] = await Promise.all([
+  const [github, farcaster, twitter, googleAlerts] = await Promise.all([
     searchGitHub(),
     searchFarcaster(),
-    searchTwitterViaGrok()
+    searchTwitterViaGrok(),
+    searchGoogleAlerts()
   ]);
 
   const report = {
     date: today,
     generated_at: new Date().toISOString(),
-    sources: { github, farcaster, twitter }
+    sources: { github, farcaster, twitter, googleAlerts }
   };
 
   if (dryRun) {
@@ -333,11 +371,12 @@ async function main() {
   console.log(`  GitHub: ${github.total_repos} repos, ${github.total_issues} recent issues/PRs`);
   console.log(`  Farcaster: ${farcaster.casts?.length || 0} casts`);
   console.log(`  Twitter/Grok: ${twitter.tweets?.length || 0} tweets`);
+  console.log(`  Google Alerts: ${googleAlerts.articles?.length || 0} articles`);
 
   return report;
 }
 
-module.exports = { main, searchGitHub, searchFarcaster, searchTwitterViaGrok };
+module.exports = { main, searchGitHub, searchFarcaster, searchTwitterViaGrok, searchGoogleAlerts };
 
 if (require.main === module) {
   main().catch(err => {
