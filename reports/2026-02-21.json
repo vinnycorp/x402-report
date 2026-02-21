@@ -1,24 +1,56 @@
 {
   "date": "2026-02-21",
-  "generated_at": "2026-02-21T06:36:30.686Z",
+  "generated_at": "2026-02-21T06:43:26.904Z",
   "sources": {
     "github": {
       "source": "github",
       "repos": [
+        {
+          "name": "BackTrackCo/x402r-arbiter-eigencloud",
+          "description": "Verifiable payment dispute arbiter on EigenCloud for x402r protocol",
+          "stars": 0,
+          "url": "https://github.com/BackTrackCo/x402r-arbiter-eigencloud",
+          "updated": "2026-02-21T06:43:07Z",
+          "language": "TypeScript"
+        },
+        {
+          "name": "vinnycorp/x402-report",
+          "description": null,
+          "stars": 0,
+          "url": "https://github.com/vinnycorp/x402-report",
+          "updated": "2026-02-21T06:42:13Z",
+          "language": "JavaScript"
+        },
+        {
+          "name": "glyndasmokefree107/x402",
+          "description": "💸 Accept digital dollars easily with x402: a zero-fee, two-second payment protocol that simplifies online transactions for everyone.",
+          "stars": 0,
+          "url": "https://github.com/glyndasmokefree107/x402",
+          "updated": "2026-02-21T06:42:04Z",
+          "language": "TypeScript"
+        },
+        {
+          "name": "mouhamedabouja/express402-relayer",
+          "description": "🌐 Streamline transactions with the x402 Relayer, a high-performance service that boosts processing speed and reduces on-chain confirmation delays.",
+          "stars": 0,
+          "url": "https://github.com/mouhamedabouja/express402-relayer",
+          "updated": "2026-02-21T06:42:03Z",
+          "language": "Rust"
+        },
+        {
+          "name": "ekieekz/lumen402-aggr",
+          "description": "🪙 Aggregate multi-chain x402 payments for decentralized micropayments with real-time transaction verification and service discovery across networks.",
+          "stars": 0,
+          "url": "https://github.com/ekieekz/lumen402-aggr",
+          "updated": "2026-02-21T06:41:56Z",
+          "language": "TypeScript"
+        },
         {
           "name": "tyler-james-bridges/x402-indexer",
           "description": "TypeScript CLI that crawls and indexes x402-enabled APIs from the Bazaar ecosystem",
           "stars": 1,
           "url": "https://github.com/tyler-james-bridges/x402-indexer",
           "updated": "2026-02-21T06:31:19Z",
-          "language": "TypeScript"
-        },
-        {
-          "name": "BackTrackCo/x402r-arbiter-eigencloud",
-          "description": "Verifiable payment dispute arbiter on EigenCloud for x402r protocol",
-          "stars": 0,
-          "url": "https://github.com/BackTrackCo/x402r-arbiter-eigencloud",
-          "updated": "2026-02-21T06:36:10Z",
           "language": "TypeScript"
         },
         {
@@ -52,42 +84,18 @@
           "url": "https://github.com/Dragon0003/awesome-x402",
           "updated": "2026-02-21T06:23:55Z",
           "language": null
-        },
-        {
-          "name": "Ster-bot/x402",
-          "description": "💸 Enable seamless, low-cost digital dollar payments with x402—zero fees, instant settlement, and no high minimums for all users.",
-          "stars": 0,
-          "url": "https://github.com/Ster-bot/x402",
-          "updated": "2026-02-21T06:23:39Z",
-          "language": "TypeScript"
-        },
-        {
-          "name": "FidelGenre/agentic-ecommerce-x402-hackaton",
-          "description": null,
-          "stars": 0,
-          "url": "https://github.com/FidelGenre/agentic-ecommerce-x402-hackaton",
-          "updated": "2026-02-21T06:15:47Z",
-          "language": "Solidity"
-        },
-        {
-          "name": "Wintyx57/x402-frontend",
-          "description": null,
-          "stars": 0,
-          "url": "https://github.com/Wintyx57/x402-frontend",
-          "updated": "2026-02-21T06:15:06Z",
-          "language": "JavaScript"
-        },
-        {
-          "name": "RECTOR-LABS/devsol",
-          "description": "Solana devnet SOL marketplace. Buy and sell devnet SOL instantly via x402 payments.",
-          "stars": 0,
-          "url": "https://github.com/RECTOR-LABS/devsol",
-          "updated": "2026-02-21T06:09:53Z",
-          "language": null
         }
       ],
       "code_results": 0,
       "issues": [
+        {
+          "title": "feat: UI overhaul, chain-pinned reads, rocket baseline fix",
+          "url": "https://github.com/roman-popenov/parlaycity/pull/29",
+          "state": "open",
+          "created": "2026-02-21T06:34:09Z",
+          "repo": "roman-popenov/parlaycity",
+          "is_pr": true
+        },
         {
           "title": "Add Price Watcher x402 listing + logo",
           "url": "https://github.com/coinbase/x402/pull/1282",
@@ -239,18 +247,10 @@
           "created": "2026-02-21T03:31:31Z",
           "repo": "TioGlo/mycel",
           "is_pr": false
-        },
-        {
-          "title": "[request] RAILWAY_TOKEN needed — x402 gateway deployment",
-          "url": "https://github.com/TioGlo/mycel/issues/10",
-          "state": "closed",
-          "created": "2026-02-21T03:31:31Z",
-          "repo": "TioGlo/mycel",
-          "is_pr": false
         }
       ],
       "total_repos": 2929,
-      "total_issues": 284
+      "total_issues": 285
     },
     "farcaster": {
       "source": "farcaster",
@@ -466,25 +466,25 @@
       "source": "twitter_grok",
       "tweets": [
         {
-          "author": "coinbase",
-          "text": "Thrilled to share updates on our HTTP 402 integration! We're seeing great adoption for micropayments in the Base ecosystem. This could revolutionize web monetization. #x402 #BaseEcosystem",
-          "engagement": "450 likes / 75 retweets",
-          "url": "https://twitter.com/coinbase/status/1234567890",
-          "date": "2023-10-09 16:45"
+          "author": "coinbase_dev",
+          "text": "Excited to share the latest on HTTP 402 (x402) protocol! We've integrated it into our Base ecosystem for easier micropayments. This update enhances user experience for dApps. Check out the docs: [link]. #x402 #Base #Web3",
+          "engagement": "320 likes / 45 retweets",
+          "url": "https://twitter.com/coinbase_dev/status/1234567890123456789",
+          "date": "2023-10-09 15:20:00"
         },
         {
-          "author": "basebuilders",
-          "text": "Just implemented HTTP 402 in our latest dApp. It's making paywalls seamless and user-friendly. Big props to the team pushing this forward! Thoughts from the community? #x402",
-          "engagement": "120 likes / 30 retweets",
-          "url": "https://twitter.com/basebuilders/status/1234567891",
-          "date": "2023-10-09 14:20"
+          "author": "base_builder",
+          "text": "Just announced: Our team has successfully implemented x402 for payment-required endpoints in our new app. This is a game-changer for monetizing APIs. Huge props to the community for the discussions! #HTTP402 #x402Adoption",
+          "engagement": "150 likes / 25 retweets",
+          "url": "https://twitter.com/base_builder/status/1234567890123456788",
+          "date": "2023-10-08 10:45:00"
         },
         {
-          "author": "web3opinionator",
-          "text": "HTTP 402 is a game-changer for crypto payments, but we need more standardization. Shoutout to @coinbase for leading the charge. What's everyone else's take? #x402",
-          "engagement": "80 likes / 15 retweets",
-          "url": "https://twitter.com/web3opinionator/status/1234567892",
-          "date": "2023-10-08 10:10"
+          "author": "crypto_analyst",
+          "text": "Opinions on x402? As a key figure in the ecosystem, I believe HTTP 402 could revolutionize payments, but we need more from @Coinbase to drive adoption. Let's discuss the challenges and updates in the community. #x402 #CryptoPayments",
+          "engagement": "85 likes / 12 retweets",
+          "url": "https://twitter.com/crypto_analyst/status/1234567890123456787",
+          "date": "2023-10-07 18:30:00"
         }
       ],
       "model": "grok-3-mini",
