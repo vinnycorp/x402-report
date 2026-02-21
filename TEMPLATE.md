@@ -6,60 +6,63 @@
 ## FORMAT:
 
 **x402 Daily Report: {DATE} ⚡**
-{N_GITHUB_ISSUES} new issues/PRs · {N_CASTS} casts · {N_ALERTS} alerts · {N_TWEETS} tweets
+{N_ALERTS} alerts · {N_CASTS} casts · {N_TWEETS} tweets · {N_GITHUB_ISSUES} GitHub issues/PRs
 
 ━━━━━━━━━━━━━━━━━━━━
 
-**TOP DEVELOPMENTS**
+**NEW INTEGRATIONS & PRODUCTS**
 
-1\. **{Development Name}** | [1]({URL}) · [2]({URL})
-{2-3 sentence summary. Focus on what changed and why it matters for x402 adoption.}
+1\. **{Name}** | [1]({URL}) · [2]({URL})
+{2-3 sentences. What launched, who built it, why it matters for x402.}
 
-2\. **{Development Name}** | [1]({URL}) · [2]({URL})
-{2-3 sentence summary.}
-
-{...up to 5 developments, ranked by significance}
+2\. **{Name}** | [1]({URL}) · [2]({URL})
+{2-3 sentences.}
 
 ━━━━━━━━━━━━━━━━━━━━
 
-**ECOSYSTEM SIGNALS**
+**ECOSYSTEM & PROTOCOL UPDATES**
 
-🏗️ {signal} - {implication}
-🤖 {signal} - {implication}
-💰 {signal} - {implication}
-📊 {signal} - {implication}
-⚠️ {signal} - {implication}
-🔗 New integrations: {PROJECT} ([1]({URL})), {PROJECT} ([2]({URL}))
+1\. **{Name}** | [1]({URL}) · [2]({URL})
+{2-3 sentences. Spec changes, SDK updates, governance, infrastructure moves.}
 
-━━━━━━━━━━━━━━━━━━━━
-
-**NOTABLE CASTS & TWEETS**
-
-- **@{author}**: "{quote}" | [1]({URL})
-
-- **@{author}**: "{quote}" | [1]({URL})
-
-- **@{author}**: "{quote}" | [1]({URL})
+2\. **{Name}** | [1]({URL}) · [2]({URL})
+{2-3 sentences.}
 
 ━━━━━━━━━━━━━━━━━━━━
 
-**GITHUB HIGHLIGHTS**
+**COMMUNITY & DISCUSSION**
 
-- {repo/PR/issue description} | [1]({URL})
-- {repo/PR/issue description} | [1]({URL})
-- {repo/PR/issue description} | [1]({URL})
+- **@{author}**: "{key quote or insight}" | [1]({URL})
+
+- **@{author}**: "{key quote or insight}" | [1]({URL})
+
+- **@{author}**: "{key quote or insight}" | [1]({URL})
+
+{Pick the most insightful or contrarian takes. Skip generic hype.}
+
+━━━━━━━━━━━━━━━━━━━━
+
+**ACTION ITEMS**
+
+🔧 {tool/product to try} - {why it's worth trying}
+💰 {investment signal or opportunity} - {context}
+📈 {trend to watch} - {what to look for next}
+⚠️ {risk or concern} - {what to be aware of}
 
 ## RULES:
 - Source links use [1], [2] etc (not "source 1")
 - Source links go INLINE, separated by |
-- No emojis in TOP DEVELOPMENTS item names
-- Emojis YES in ECOSYSTEM SIGNALS
-- No line breaks between ECOSYSTEM SIGNALS items
-- Line breaks between NOTABLE CASTS & TWEETS items
+- No emojis in section item names (except ACTION ITEMS)
+- Emojis YES in ACTION ITEMS
+- No line breaks between ACTION ITEMS
+- Line breaks between COMMUNITY & DISCUSSION items
 - Use - (dash) not — (em dash) in body text
 - Bold section headings
 - Bold author names in quotes
-- Synthesize across sources - don't just list each source separately
-- Prioritize: new integrations > protocol updates > community discussion > speculation
-- If a development appears in multiple sources, consolidate into one item with multiple source links
+- SYNTHESIZE across sources - if the same topic appears in Google Alerts, Farcaster, AND GitHub, consolidate into ONE item with links from all sources
+- Deduplicate aggressively - same story from different sources = one item, multiple links
+- Prioritize: new launches/integrations > protocol changes > community takes > speculation
 - Skip Grok tweets that look hallucinated (wrong dates, generic content, no real engagement data)
+- Do NOT organize by data source - organize by THEME
+- Do NOT mention the day of the week
+- ACTION ITEMS should be genuinely useful - specific tools to try, projects to watch, investment angles
