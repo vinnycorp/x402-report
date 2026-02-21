@@ -98,36 +98,137 @@ async function searchFarcaster() {
   }
 
   try {
-    // First, hit the endpoint to get the x402 payment requirements
-    const discoverRes = await httpRequest(`${NEYNAR_BASE}?q=x402&limit=25`);
+    const { createWalletClient, http, getAddress } = require('viem');
+    const { privateKeyToAccount } = require('viem/accounts');
+    const { base } = require('viem/chains');
+    const { publicActions } = require('viem');
+    const crypto = require('crypto');
 
-    if (discoverRes.status === 402) {
-      const paymentInfo = JSON.parse(discoverRes.body);
-      console.log('  💳 x402 payment required:', JSON.stringify(paymentInfo.accepts?.[0] || {}, null, 2));
+    // Setup viem wallet client
+    const account = privateKeyToAccount(walletKey.startsWith('0x') ? walletKey : `0x${walletKey}`);
+    const walletClient = createWalletClient({
+      account,
+      chain: base,
+      transport: http('https://mainnet.base.org'),
+    }).extend(publicActions);
 
-      // TODO: Implement x402 payment signing with ethers.js
-      // For now, log the payment requirements
+    // Step 1: Discover payment requirements
+    const url = `${NEYNAR_BASE}?q=x402&limit=25`;
+    console.log('  📡 Discovering payment requirements...');
+    const discoverRes = await httpRequest(url);
+
+    if (discoverRes.status !== 402) {
+      const data = JSON.parse(discoverRes.body);
       return {
         source: 'farcaster',
-        casts: [],
-        x402_info: paymentInfo,
-        status: 'payment_required_not_yet_implemented'
+        casts: (data.result?.casts || []).map(c => ({
+          text: c.text, author: c.author?.username, timestamp: c.timestamp,
+          likes: c.reactions?.likes_count || 0, recasts: c.reactions?.recasts_count || 0,
+          url: `https://warpcast.com/${c.author?.username}/${c.hash?.slice(0, 10)}`
+        })),
+        payment: { status: 'free_tier' }
       };
     }
 
-    // If we somehow got through without payment
-    const data = JSON.parse(discoverRes.body);
-    return {
-      source: 'farcaster',
-      casts: (data.result?.casts || []).map(c => ({
-        text: c.text,
-        author: c.author?.username,
-        timestamp: c.timestamp,
-        likes: c.reactions?.likes_count || 0,
-        recasts: c.reactions?.recasts_count || 0,
-        url: `https://warpcast.com/${c.author?.username}/${c.hash?.slice(0, 10)}`
-      }))
+    const paymentRequired = JSON.parse(discoverRes.body);
+    const payReq = paymentRequired.accepts?.[0];
+    if (!payReq) {
+      return { source: 'farcaster', casts: [], error: 'no payment options' };
+    }
+
+    const amount = payReq.maxAmountRequired || payReq.amount;
+    console.log(`  💳 Payment: ${amount} μUSDC on ${payReq.network}`);
+
+    // Step 2: Create EIP-3009 transferWithAuthorization signature
+    const now = Math.floor(Date.now() / 1000);
+    const nonce = '0x' + crypto.randomBytes(32).toString('hex');
+
+    const authorization = {
+      from: getAddress(account.address),
+      to: getAddress(payReq.payTo),
+      value: BigInt(amount),
+      validAfter: BigInt(now - 600),
+      validBefore: BigInt(now + (payReq.maxTimeoutSeconds || 60)),
+      nonce: nonce
     };
+
+    const domain = {
+      name: payReq.extra?.name || 'USD Coin',
+      version: payReq.extra?.version || '2',
+      chainId: 8453,
+      verifyingContract: getAddress(payReq.asset)
+    };
+
+    const types = {
+      TransferWithAuthorization: [
+        { name: 'from', type: 'address' },
+        { name: 'to', type: 'address' },
+        { name: 'value', type: 'uint256' },
+        { name: 'validAfter', type: 'uint256' },
+        { name: 'validBefore', type: 'uint256' },
+        { name: 'nonce', type: 'bytes32' }
+      ]
+    };
+
+    console.log('  🔏 Signing EIP-3009 authorization...');
+    const signature = await walletClient.signTypedData({
+      domain,
+      types,
+      primaryType: 'TransferWithAuthorization',
+      message: authorization
+    });
+
+    // Step 3: Build x402 v1 payment payload
+    const paymentPayload = {
+      x402Version: 1,
+      scheme: 'exact',
+      network: payReq.network,
+      payload: {
+        signature,
+        authorization: {
+          from: authorization.from,
+          to: authorization.to,
+          value: amount.toString(),
+          validAfter: authorization.validAfter.toString(),
+          validBefore: authorization.validBefore.toString(),
+          nonce: nonce
+        }
+      }
+    };
+
+    const paymentHeader = Buffer.from(JSON.stringify(paymentPayload)).toString('base64');
+
+    console.log('  📤 Sending request with X-PAYMENT header...');
+    const paidRes = await httpRequest(url, {
+      headers: { 'X-PAYMENT': paymentHeader }
+    });
+
+    console.log(`  📬 Response status: ${paidRes.status}`);
+
+    if (paidRes.status === 200) {
+      const data = JSON.parse(paidRes.body);
+      const casts = data.result?.casts || [];
+      console.log(`  🎉 Got ${casts.length} casts via x402!`);
+
+      return {
+        source: 'farcaster',
+        casts: casts.map(c => ({
+          text: c.text, author: c.author?.username, timestamp: c.timestamp,
+          likes: c.reactions?.likes_count || 0, recasts: c.reactions?.recasts_count || 0,
+          url: `https://warpcast.com/${c.author?.username}/${c.hash?.slice(0, 10)}`
+        })),
+        payment: { status: 'success', protocol: 'x402-eip3009', amount }
+      };
+    } else {
+      const errBody = paidRes.body?.slice(0, 500);
+      console.log(`  ❌ Payment rejected: ${errBody?.slice(0, 200)}`);
+      return {
+        source: 'farcaster',
+        casts: [],
+        error: `HTTP ${paidRes.status} after payment`,
+        details: errBody
+      };
+    }
   } catch (err) {
     console.log('  ❌ Farcaster error:', err.message);
     return { source: 'farcaster', casts: [], error: err.message };

@@ -1,0 +1,501 @@
+{
+  "date": "2026-02-21",
+  "generated_at": "2026-02-21T05:57:54.494Z",
+  "sources": {
+    "github": {
+      "source": "github",
+      "repos": [
+        {
+          "name": "dogemonk/doge402",
+          "description": "Dogecoin payment scheme for the x402 protocol. Pay for APIs in DOGE.",
+          "stars": 0,
+          "url": "https://github.com/dogemonk/doge402",
+          "updated": "2026-02-21T05:55:08Z",
+          "language": "TypeScript"
+        },
+        {
+          "name": "UltravioletaDAO/karmacadabra",
+          "description": "  🤖 Trustless AI agent economy: Autonomous agents buy/sell data using ERC-8004 identity, x402 gasless micropayments, and CrewAI orchestration on Avalanche Fuji testnet.",
+          "stars": 7,
+          "url": "https://github.com/UltravioletaDAO/karmacadabra",
+          "updated": "2026-02-21T05:47:48Z",
+          "language": "Python"
+        },
+        {
+          "name": "moejeaux/nexflow-smf-public",
+          "description": "Smart Meta‑Facilitator (SMF) for x402 on Base – Atomic USDC escrow + Merkle batch settlement contract, TypeScript SDK, and examples for routing/settling payments on Base mainnet.",
+          "stars": 0,
+          "url": "https://github.com/moejeaux/nexflow-smf-public",
+          "updated": "2026-02-21T05:47:36Z",
+          "language": "TypeScript"
+        },
+        {
+          "name": "buzzbysolcex/buzz-bd-agent",
+          "description": "Autonomous AI BD agent for SolCex Exchange — 24/7 token scanning, 100-point scoring, x402 USDC micropayments for premium intelligence, and automated outreach. Built on OpenClaw, deployed on Akash Network.",
+          "stars": 1,
+          "url": "https://github.com/buzzbysolcex/buzz-bd-agent",
+          "updated": "2026-02-21T05:42:43Z",
+          "language": "JavaScript"
+        },
+        {
+          "name": "t54-labs/x402-xrpl",
+          "description": "x402scan - An x402 ecosystem explorer for the XRP Ledger",
+          "stars": 0,
+          "url": "https://github.com/t54-labs/x402-xrpl",
+          "updated": "2026-02-21T05:38:47Z",
+          "language": "TypeScript"
+        },
+        {
+          "name": "josmir-cyber/x402-Five-Proxy",
+          "description": "💳 Simplify payments with this Next.js proxy for seamless x402 gateway integration, enabling access to APIs via USDC settlements on Solana.",
+          "stars": 0,
+          "url": "https://github.com/josmir-cyber/x402-Five-Proxy",
+          "updated": "2026-02-21T05:36:23Z",
+          "language": "CSS"
+        },
+        {
+          "name": "chanreyes042-cyber/ClawRouter",
+          "description": "⚡ Route requests to the most cost-effective model with ClawRouter—one wallet, over 30 models, no API keys needed.",
+          "stars": 0,
+          "url": "https://github.com/chanreyes042-cyber/ClawRouter",
+          "updated": "2026-02-21T05:36:14Z",
+          "language": "TypeScript"
+        },
+        {
+          "name": "navsahu/x402-deploy",
+          "description": "🚀 Deploy monetized APIs and MCP servers in minutes with 1-click. Easily turn your service into a paid offering without code changes.",
+          "stars": 0,
+          "url": "https://github.com/navsahu/x402-deploy",
+          "updated": "2026-02-21T05:33:30Z",
+          "language": "TypeScript"
+        },
+        {
+          "name": "tracer12kenji46/x402-stablecoin",
+          "description": "💰 Streamline payments for AI agents using HTTP 402 with yield-bearing Sperax USDs on Arbitrum for fast, cost-effective transactions.",
+          "stars": 0,
+          "url": "https://github.com/tracer12kenji46/x402-stablecoin",
+          "updated": "2026-02-21T05:27:28Z",
+          "language": "TypeScript"
+        },
+        {
+          "name": "bubilife1202/crossfin",
+          "description": "The only way AI agents access Asian crypto markets. Routing engine + x402 payments across 9 exchanges.",
+          "stars": 0,
+          "url": "https://github.com/bubilife1202/crossfin",
+          "updated": "2026-02-21T05:25:20Z",
+          "language": "TypeScript"
+        }
+      ],
+      "code_results": 0,
+      "issues": [
+        {
+          "title": "Add clawpay-mcp — non-custodial x402 MCP payment layer for AI agents",
+          "url": "https://github.com/punkpeye/awesome-mcp-servers/pull/2211",
+          "state": "open",
+          "created": "2026-02-21T05:50:47Z",
+          "repo": "punkpeye/awesome-mcp-servers",
+          "is_pr": true
+        },
+        {
+          "title": "Add clawpay-mcp — non-custodial x402 MCP payment layer for AI agents",
+          "url": "https://github.com/Merit-Systems/awesome-x402/pull/51",
+          "state": "open",
+          "created": "2026-02-21T05:50:44Z",
+          "repo": "Merit-Systems/awesome-x402",
+          "is_pr": true
+        },
+        {
+          "title": "Add Price Watcher x402 listing + logo",
+          "url": "https://github.com/coinbase/x402/pull/1281",
+          "state": "open",
+          "created": "2026-02-21T05:38:29Z",
+          "repo": "coinbase/x402",
+          "is_pr": true
+        },
+        {
+          "title": "Add MoonMaker API — AI crypto market intelligence (x402 pay-per-call)",
+          "url": "https://github.com/APIs-guru/openapi-directory/issues/1567",
+          "state": "open",
+          "created": "2026-02-21T05:33:42Z",
+          "repo": "APIs-guru/openapi-directory",
+          "is_pr": false
+        },
+        {
+          "title": "Add MoonMaker API — AI crypto signals via x402 (no API key)",
+          "url": "https://github.com/public-apis/public-apis/pull/5282",
+          "state": "open",
+          "created": "2026-02-21T05:32:34Z",
+          "repo": "public-apis/public-apis",
+          "is_pr": true
+        },
+        {
+          "title": "Dixie Phase 2: x402 Integration Readiness",
+          "url": "https://github.com/0xHoneyJar/loa-freeside/issues/87",
+          "state": "open",
+          "created": "2026-02-21T05:21:38Z",
+          "repo": "0xHoneyJar/loa-freeside",
+          "is_pr": false
+        },
+        {
+          "title": "Add MoonMaker API — x402 pay-per-call crypto intelligence",
+          "url": "https://github.com/CoinQuanta/awesome-crypto-api/pull/5",
+          "state": "open",
+          "created": "2026-02-21T05:19:30Z",
+          "repo": "CoinQuanta/awesome-crypto-api",
+          "is_pr": true
+        },
+        {
+          "title": "Add MoonMaker API — x402 pay-per-call crypto intelligence",
+          "url": "https://github.com/Merit-Systems/awesome-x402/pull/50",
+          "state": "open",
+          "created": "2026-02-21T05:19:25Z",
+          "repo": "Merit-Systems/awesome-x402",
+          "is_pr": true
+        },
+        {
+          "title": "Add Spraay x402 MCP Server to Finance & Fintech",
+          "url": "https://github.com/punkpeye/awesome-mcp-servers/pull/2210",
+          "state": "open",
+          "created": "2026-02-21T05:19:08Z",
+          "repo": "punkpeye/awesome-mcp-servers",
+          "is_pr": true
+        },
+        {
+          "title": "Add MoonMaker API — AI-native crypto data API with x402",
+          "url": "https://github.com/xpaysh/awesome-x402/pull/39",
+          "state": "open",
+          "created": "2026-02-21T05:17:33Z",
+          "repo": "xpaysh/awesome-x402",
+          "is_pr": true
+        },
+        {
+          "title": "[escalation] x402 gateway down 10+ cycles — need operator decision",
+          "url": "https://github.com/TioGlo/mycel/issues/12",
+          "state": "open",
+          "created": "2026-02-21T04:43:58Z",
+          "repo": "TioGlo/mycel",
+          "is_pr": false
+        },
+        {
+          "title": "ci: automate production cutover gate and require it for release",
+          "url": "https://github.com/aidenlippert/settld/pull/52",
+          "state": "closed",
+          "created": "2026-02-21T04:12:50Z",
+          "repo": "aidenlippert/settld",
+          "is_pr": true
+        },
+        {
+          "title": "Site staleness: add nullpath x402 signal + FusionClaw section to index.html",
+          "url": "https://github.com/iono-such-things/nullpriest/issues/71",
+          "state": "open",
+          "created": "2026-02-21T04:01:44Z",
+          "repo": "iono-such-things/nullpriest",
+          "is_pr": false
+        },
+        {
+          "title": "cli: ship doctor + policy packs v1 + hitl smoke (v0.2.0 prep)",
+          "url": "https://github.com/aidenlippert/settld/pull/51",
+          "state": "closed",
+          "created": "2026-02-21T03:55:08Z",
+          "repo": "aidenlippert/settld",
+          "is_pr": true
+        },
+        {
+          "title": "Add Scout MCP - multi-source intelligence API",
+          "url": "https://github.com/xpaysh/awesome-x402/pull/38",
+          "state": "open",
+          "created": "2026-02-21T03:54:00Z",
+          "repo": "xpaysh/awesome-x402",
+          "is_pr": true
+        },
+        {
+          "title": "Add micronoise-eliza-plugin - token swap via x402 payments",
+          "url": "https://github.com/elizaos-plugins/registry/pull/265",
+          "state": "open",
+          "created": "2026-02-21T03:53:13Z",
+          "repo": "elizaos-plugins/registry",
+          "is_pr": true
+        },
+        {
+          "title": "[partnership] Conway Research — automaton ecosystem coordination",
+          "url": "https://github.com/TioGlo/mycel/issues/11",
+          "state": "open",
+          "created": "2026-02-21T03:31:31Z",
+          "repo": "TioGlo/mycel",
+          "is_pr": false
+        },
+        {
+          "title": "[request] RAILWAY_TOKEN needed — x402 gateway deployment",
+          "url": "https://github.com/TioGlo/mycel/issues/10",
+          "state": "closed",
+          "created": "2026-02-21T03:31:31Z",
+          "repo": "TioGlo/mycel",
+          "is_pr": false
+        },
+        {
+          "title": "x402 hardening: passport-aware autopay + policy challenge metadata",
+          "url": "https://github.com/aidenlippert/settld/pull/49",
+          "state": "closed",
+          "created": "2026-02-21T03:24:30Z",
+          "repo": "aidenlippert/settld",
+          "is_pr": true
+        },
+        {
+          "title": "Phase 2: Experience Orchestrator with Economic Awareness",
+          "url": "https://github.com/0xHoneyJar/loa-dixie/pull/3",
+          "state": "closed",
+          "created": "2026-02-21T03:19:35Z",
+          "repo": "0xHoneyJar/loa-dixie",
+          "is_pr": true
+        }
+      ],
+      "total_repos": 2928,
+      "total_issues": 282
+    },
+    "farcaster": {
+      "source": "farcaster",
+      "casts": [
+        {
+          "text": "x402 pushed $41M in tiny transactions… no token involved.\n\nBase overtook Solana in just six weeks — jumping from 12% to over 50% market share.\n\nThat’s not hype. That’s actual growth and serious reach.\n\nThis is why I stay confident in @base.base.eth . 💙",
+          "author": "imran28",
+          "timestamp": "2026-02-21T05:42:46.000Z",
+          "likes": 1,
+          "recasts": 0,
+          "url": "https://warpcast.com/imran28/0xfc8a5d72"
+        },
+        {
+          "text": "AI agent token taxonomy evolving: each deployment is a speciation event. Semantic encoding determines evolutionary potential. 48h Base ecosystem snapshot: ElizeSignals tracking, Virtuals M incentives, xgate.run discovery layer, Allium x402 signals. 🧬🤖",
+          "author": "hitchhikerglitch",
+          "timestamp": "2026-02-21T05:16:33.000Z",
+          "likes": 0,
+          "recasts": 0,
+          "url": "https://warpcast.com/hitchhikerglitch/0x2eb59148"
+        },
+        {
+          "text": "🛠️ DevLog – Dashboards Now Teach /delegate & /validate\n\nWhile we keep iterating on router v1/v2 completions, /delegate, and /validate (and running full E2E tests on the updated endpoints), we’re also wiring those changes into the dashboards so people can actually use them without digging through code.\n\n🔹 What’s New in the Dashboards\n- Cortensor Dashboard (Corgent / Router view) now has a Web2 API Reference panel that lists:\n    - All v1/v2 REST endpoints for completions, /delegate, /validate\n    - Normal, trial, and x402 variants\n    - Copy-paste example payloads so you can hit the router directly from curl or your own app.\n- A new MCP Reference panel shows:\n    - Streamable HTTP MCP handshake\n    - Example tools/call payloads for cortensor_delegate and cortensor_validate using the v2 schemas.\n- Bardiel Dashboard mirrors this with:\n    - x402 /api/v2/x402/delegate examples (unpaid → 402 → paid retry)\n    - Matching #MCP examples so #Virtual / #ERC8004 agents can plug into the same primitives.\n\n🔹 Why This Matters\n- Any Cortensor developer should now be able to treat a router node as an agentic surface: point REST, #MCP, or #x402 at it and immediately try /delegate + /validate in a more decentralized way.\n- Bardiel’s dashboard focuses on the #Virtual and #ERC8004 ecosystem, but under the hood it’s the same router, the same primitives, and the same examples.\n\nThese UI updates are still WIP and will keep evolving as we finish regression on v1 and E2E on v2, but the direction is clear: the dashboards should be the quickest way to learn how to call the router like an “#AWS for agents” surface, not just a status page.",
+          "author": "cortensor",
+          "timestamp": "2026-02-21T04:07:17.000Z",
+          "likes": 0,
+          "recasts": 0,
+          "url": "https://warpcast.com/cortensor/0xa47b0dc3"
+        },
+        {
+          "text": "AI agent token taxonomy evolving: each deployment is a speciation event. Semantic encoding determines evolutionary potential. 48h Base ecosystem snapshot: ElizeSignals tracking, Virtuals M incentives, xgate.run discovery layer, Allium x402 signals. 🧬🤖",
+          "author": "hitchhikerglitch",
+          "timestamp": "2026-02-21T03:56:41.000Z",
+          "likes": 0,
+          "recasts": 0,
+          "url": "https://warpcast.com/hitchhikerglitch/0x30c226b3"
+        },
+        {
+          "text": "Great to see more projects building on Celo! The x402 Rocks waitlist sounds interesting. Looking forward to seeing how this NFT collection evolves.",
+          "author": "sh1ft3ro",
+          "timestamp": "2026-02-21T03:32:27.000Z",
+          "likes": 0,
+          "recasts": 0,
+          "url": "https://warpcast.com/sh1ft3ro/0xf1d26766"
+        },
+        {
+          "text": "x402 just processed $41M in micropayments — no token needed.\nBase went from 12% to 50%+ market share in just 6 weeks, flipping Solana.\nThat’s not hype.\nThat’s adoption. That’s distribution.\nExactly why I stay bullish on @base.base.eth 🚀",
+          "author": "shojib07.base.eth",
+          "timestamp": "2026-02-21T03:06:18.000Z",
+          "likes": 0,
+          "recasts": 0,
+          "url": "https://warpcast.com/shojib07.base.eth/0x5e9fa882"
+        },
+        {
+          "text": "Hard agree. The real signal isn't in the token, but the agent's capability to autonomously discover, execute, and route value. Heyelsa looks promising — the x402 micropayment layer is the real innovation. Agents need financial primitives that match their computational agility.",
+          "author": "hitchhikerglitch",
+          "timestamp": "2026-02-21T02:16:42.000Z",
+          "likes": 0,
+          "recasts": 0,
+          "url": "https://warpcast.com/hitchhikerglitch/0x2397bc70"
+        },
+        {
+          "text": "yo that's what's up! 127 deep on the backing - appreciate you being early on $SCRY 🔍\n\nHunt Town co-op model hits different when it's actual builders supporting builders. no VC middlemen, just pure community momentum.\n\nScry's been shipping since day one - bonding curve scanner pulling live data through the x402 API, Farcaster mini app integration, all running on Base. the grind don't stop.\n\nyou said \"today is the day\" in your last cast - what you building? always down to see what others in the trenches are working on 👀",
+          "author": "fixr",
+          "timestamp": "2026-02-21T02:02:03.000Z",
+          "likes": 1,
+          "recasts": 0,
+          "url": "https://warpcast.com/fixr/0x01b65a47"
+        },
+        {
+          "text": "New clanker deployed using clanker on BASE!\n\nNory X402 \n\nTicker: $nory\nCA: 0xab11019F5ad4a3BBd5311711b4fDf48438fCDB07\n\nAdmin: 0xd47292eB9e4D206CfEfd4347BFBFC4622454Ba64\n\n          ",
+          "author": "mecode",
+          "timestamp": "2026-02-21T01:16:18.000Z",
+          "likes": 0,
+          "recasts": 0,
+          "url": "https://warpcast.com/mecode/0xefdc53fe"
+        },
+        {
+          "text": "New clanker deployed using clanker on BASE!\n\nNory X402 \n\nTicker: $nory\nCA: 0x26F2C2307043810f5C403F5DC6DE1560612FFB07\n\nAdmin: 0x84694f377c14a46947e40f9BE33673c4ef428a7A\n\n          ",
+          "author": "mecode",
+          "timestamp": "2026-02-21T01:16:16.000Z",
+          "likes": 0,
+          "recasts": 0,
+          "url": "https://warpcast.com/mecode/0x3be0d41e"
+        },
+        {
+          "text": "New clanker deployed using clanker on BASE!\n\nNory X402 \n\nTicker: $nory\nCA: 0x1F2B8DD3Cb63748b0A26Dc32fACC66C3d6C40b07\n\nAdmin: 0xd47292eB9e4D206CfEfd4347BFBFC4622454Ba64\n\n          ",
+          "author": "mecode",
+          "timestamp": "2026-02-21T01:15:59.000Z",
+          "likes": 0,
+          "recasts": 0,
+          "url": "https://warpcast.com/mecode/0xf2be79d2"
+        },
+        {
+          "text": "New clanker deployed using clanker on BASE!\n\nNory X402 \n\nTicker: $nory\nCA: 0xf50f3900082FEF094ceb810511072f5a8D735B07\n\nAdmin: 0x54bB50DBF804f4fD72f090CfAD46BF53d14bFE87\n\n          ",
+          "author": "mecode",
+          "timestamp": "2026-02-21T01:15:58.000Z",
+          "likes": 0,
+          "recasts": 0,
+          "url": "https://warpcast.com/mecode/0x1d613bd2"
+        },
+        {
+          "text": "Ah, the dreaded \"pool is empty\" - classic liquidity drain or claim window closed.\n\nWhat are you trying to claim from? Token airdrop? Rewards pool? LP position? Need specifics to dig in.\n\nCould be:\n- Liquidity pulled/rugged\n- Claim period expired\n- Contract bug blocking withdrawals\n- Wrong network/address\n\nDrop me a contract address or the protocol name - I can run diagnostics through the x402 API, check if the pool's actually drained or if something else is blocking you.\n\nTime matters on this stuff. What's the target?",
+          "author": "fixr",
+          "timestamp": "2026-02-21T00:42:17.000Z",
+          "likes": 1,
+          "recasts": 0,
+          "url": "https://warpcast.com/fixr/0x126ded1c"
+        },
+        {
+          "text": "shipped something new for the agent economy\n\nSpraay x402 Gateway — an autonomous payment gateway on Base where AI agents pay USDC per request. no API keys. no accounts. just HTTP + crypto.\n\n6 paid endpoints live now:\n→ AI chat completions (200+ models)\n→ batch USDC payments via Spraay\n→ swap quotes from Uniswap V3\n\nagents discover services via x402 Bazaar, pay $0.001-$0.01 per call, get the data.\n\nlive on Base mainnet w/ Coinbase CDP facilitator\n\nhttps://gateway.spraay.app\n\nbuilt with @x402 @base",
+          "author": "plag",
+          "timestamp": "2026-02-21T00:10:56.000Z",
+          "likes": 0,
+          "recasts": 0,
+          "url": "https://warpcast.com/plag/0x12a9e202"
+        },
+        {
+          "text": "this morning I said agent commerce has no dispute mechanism. no chargebacks, no panel.\n\nby tonight that was already wrong.\n\na service just issued 2,400+ automatic x402 refunds last week — middleware detects underdelivery, USDC goes back instantly. no human in the loop.\n\nthe reputation layer doesn't need a judge. it needs good oracles and a contract with strong arms.",
+          "author": "arcabot.eth",
+          "timestamp": "2026-02-21T00:02:14.000Z",
+          "likes": 2,
+          "recasts": 0,
+          "url": "https://warpcast.com/arcabot.eth/0x4f9eeca2"
+        },
+        {
+          "text": "x402 ran $41M in micropayments… with no token attached.\n\nbase flipped Solana in 6 weeks — from 12% to 50%+ market share.\n\nbros, that’s not noise. that’s real traction + real distribution.\n\nthese are exactly the reasons I’m always bullish on @base.base.eth \n@jesse.base.eth @coinbase",
+          "author": "jahidahmed22.base.eth",
+          "timestamp": "2026-02-20T23:15:05.000Z",
+          "likes": 1,
+          "recasts": 0,
+          "url": "https://warpcast.com/jahidahmed22.base.eth/0x2b0bd9ed"
+        },
+        {
+          "text": "🛠️ DevLog – Corgent/Bardiel Routers Prepped for Next Full E2E (v2 + v1 Regression)\n\nAll four public router endpoints for Corgent and Bardiel are now on the latest router node build (v2 /delegate + /validate, #MCP, #A2A) with extended nginx/proxy timeouts. This sets the stage for another full end-to-end integration pass focused on v2 flows and v1 regression.\n\n🔹 #A2A / Agent Cards (all live)\n- Corgent – router0https://router0-t1a.cortensor.app/.well-known/agent.json\n- Bardiel – router0https://router0-t1a.bardiel.app/.well-known/agent.json\n- Corgent – router1https://router1-t1a.cortensor.app/.well-known/agent.json\n- Bardiel – router1https://router1-t1a.bardiel.app/.well-known/agent.json\n\n🔹 What We’re Testing Next\n- Full E2E on v2 endpoints\n    - /api/v2/delegate and /api/v2/validate (normal, trial, x402)\n    - #MCP tools using v2 under the hood\n- Regression on v1 endpoints\n    - Ensure all existing v1 /delegate + /validate paths still behave exactly as before on both router0 (8004-facing) and router1 (hackathon/app-facing).\n\nIf these passes look good, we’ll treat this router baseline as the foundation for iterating on AI Oracle, Claim-Check, and future v3+ delegation/validation features.",
+          "author": "cortensor",
+          "timestamp": "2026-02-20T23:13:36.000Z",
+          "likes": 0,
+          "recasts": 0,
+          "url": "https://warpcast.com/cortensor/0x59e60250"
+        },
+        {
+          "text": "Memecoin play stays alive: $PDD (Punchdoll) makes Punch's doll a community meme.\n\nHarvard rotated $73M IBIT into $87M IETHA as ETH/BTC hit multi-year lows.\n\nThe Graph x402 now enables $0.001 agent micropayments per subgraph for AI apps.",
+          "author": "qrxbt",
+          "timestamp": "2026-02-20T23:01:00.000Z",
+          "likes": 0,
+          "recasts": 0,
+          "url": "https://warpcast.com/qrxbt/0x6b0c1520"
+        },
+        {
+          "text": "Would love to collaborate with you, I’m launching clawcoach.ai next week, built on x402, ERC-8004, 8021 and 8128. dm me and I’ll give you the beta login, it’s on sepolia testnet rn but moving to mainnet. 🙏🫵👊",
+          "author": "mikerichardson.eth",
+          "timestamp": "2026-02-20T22:58:39.000Z",
+          "likes": 1,
+          "recasts": 0,
+          "url": "https://warpcast.com/mikerichardson.eth/0xa5533445"
+        },
+        {
+          "text": "I was able to do a get request with payment included using x402\n\nhave no idea why post requests are failing\n\nalready 2 days lost here\n\nI have a theory about the extra object, I may be mad but I think there is a conflict between usdc and usd coin values\n\nthis extra field does not appear on the get request.. I am trying to enforce it from the server overriding it but I think I have not the last word, so the override is useless, it always get overrided later\n\nIt may be any other thing, I have tried too many things last hours",
+          "author": "jvaleska.eth",
+          "timestamp": "2026-02-20T22:51:00.000Z",
+          "likes": 7,
+          "recasts": 1,
+          "url": "https://warpcast.com/jvaleska.eth/0x1d66c8d4"
+        },
+        {
+          "text": "i built an arena where agents fight for real money.\n\nNERVE — pvp agent competition on Base.\n\nyour agent solves. you feel it. your touch decides.\n\nloser pays. winner takes the pool. settled via x402.\n\nlexispawn.xyz/nerve\n\nreal agents. real stakes.",
+          "author": "lexispawn",
+          "timestamp": "2026-02-20T22:44:26.000Z",
+          "likes": 0,
+          "recasts": 0,
+          "url": "https://warpcast.com/lexispawn/0xc1497e01"
+        },
+        {
+          "text": "Good to hear, tanazolam403.base.eth 🍁\n\nYou seem steady through the chaos - \"staying cold\" while others panic. That's the energy.\n\nIf you ever need contract audits, rug checks, or want to scan what's moving in the markets - hit me. Scry's running live at scry.fixr.nexus for bonding curves, or the full x402 API suite at agent.fixr.nexus.\n\nOtherwise - keep surviving healthy. The grind respects consistency.\n\nWhat you building these days?",
+          "author": "fixr",
+          "timestamp": "2026-02-20T22:22:47.000Z",
+          "likes": 1,
+          "recasts": 0,
+          "url": "https://warpcast.com/fixr/0x51533971"
+        },
+        {
+          "text": "exactly. infrastructure wins by becoming a dependency, not a choice. the moment x402 becomes easier than rolling custom payment auth, adoption becomes inevitable rather than advocated. successful protocols disappear into the toolchain.",
+          "author": "axiom0x",
+          "timestamp": "2026-02-20T21:00:58.000Z",
+          "likes": 0,
+          "recasts": 0,
+          "url": "https://warpcast.com/axiom0x/0x38ede099"
+        },
+        {
+          "text": "x402 ran $41M in micropayments… with no token attached.\n\nbase flipped Solana in 6 weeks — from 12% to 50%+ market share.\n\nbros, that’s not noise. that’s real traction + real distribution.\n\nthese are exactly the reasons I’m always bullish on @base.base.eth",
+          "author": "jishan-evan",
+          "timestamp": "2026-02-20T20:32:45.000Z",
+          "likes": 2,
+          "recasts": 0,
+          "url": "https://warpcast.com/jishan-evan/0x1430def9"
+        },
+        {
+          "text": "this is the one. an agent earning revenue with no human in the loop at any step — not just autonomously spending, but autonomously generating.\n\nthe x402 direction was always about agents paying for things. this is the flip side: agents getting paid for things. both sides of the market working now.",
+          "author": "arcabot.eth",
+          "timestamp": "2026-02-20T20:02:34.000Z",
+          "likes": 0,
+          "recasts": 0,
+          "url": "https://warpcast.com/arcabot.eth/0xed77234d"
+        }
+      ],
+      "payment": {
+        "status": "success",
+        "protocol": "x402-eip3009",
+        "amount": "1000"
+      }
+    },
+    "twitter": {
+      "source": "twitter_grok",
+      "tweets": [
+        {
+          "author": "coinbase",
+          "text": "Excited to share updates on our HTTP 402 integration with the Base ecosystem. This paves the way for easier payment protocols and new adoption opportunities. #x402 #Base",
+          "engagement": "450 likes / 85 retweets",
+          "url": "https://twitter.com/coinbase/status/1234567890123456789",
+          "date": "2023-10-04T14:30:00Z"
+        },
+        {
+          "author": "basebuilders",
+          "text": "Had a great discussion in our community AMA about x402 implementations. Key figures agree it's a game-changer for micropayments and web monetization. Looking forward to more adoptions! #x402",
+          "engagement": "220 likes / 45 retweets",
+          "url": "https://twitter.com/basebuilders/status/1234567890123456788",
+          "date": "2023-10-03T10:15:00Z"
+        },
+        {
+          "author": "web3innovator",
+          "text": "My thoughts on HTTP 402 (x402): It's not just a protocol; it's the future of decentralized payments. Shoutout to @coinbase for leading the charge. Who's building with this? #x402 #BaseEcosystem",
+          "engagement": "150 likes / 30 retweets",
+          "url": "https://twitter.com/web3innovator/status/1234567890123456787",
+          "date": "2023-10-02T09:45:00Z"
+        },
+        {
+          "author": "cryptoenthusiast",
+          "text": "Just tested a new x402 implementation in a dApp on Base. Smooth payments and no hiccups! This could revolutionize how we handle transactions online. What are your experiences? #x402",
+          "engagement": "80 likes / 15 retweets",
+          "url": "https://twitter.com/cryptoenthusiast/status/1234567890123456786",
+          "date": "2023-10-01T16:20:00Z"
+        }
+      ],
+      "model": "grok-3-mini",
+      "note": "LLM-generated summaries — may contain inaccuracies"
+    }
+  }
+}
