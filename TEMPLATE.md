@@ -5,7 +5,7 @@
 
 ## FORMAT:
 
-**x402 Daily Report: {DATE} ⚡**
+**x402 Daily Report: {MONTH} {DAY}, {YEAR} ⚡**
 {N_ALERTS} alerts · {N_CASTS} casts · {N_TWEETS} tweets · {N_GITHUB_ISSUES} GitHub issues/PRs
 
 ━━━━━━━━━━━━━━━━━━━━
