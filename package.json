@@ -1,0 +1,14 @@
+{
+  "name": "x402-report",
+  "version": "1.0.0",
+  "description": "Automated daily x402 protocol intelligence report",
+  "main": "collect.js",
+  "scripts": {
+    "collect": "node collect.js",
+    "test": "node collect.js --dry-run"
+  },
+  "dependencies": {
+    "ethers": "^6.0.0"
+  },
+  "private": true
+}
