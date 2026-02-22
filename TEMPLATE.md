@@ -5,7 +5,7 @@
 
 ## FORMAT:
 
-**x402 Daily Report: {MONTH} {DAY}, {YEAR} ⚡**
+**x402 Daily Report: {MON} {DAY}, {YEAR} ⚡**
 {N_ALERTS} alerts · {N_CASTS} casts · {N_TWEETS} tweets · {N_GITHUB_ISSUES} GitHub issues/PRs
 
 ━━━━━━━━━━━━━━━━━━━━
@@ -65,4 +65,5 @@
 - Skip Grok tweets that look hallucinated (wrong dates, generic content, no real engagement data)
 - Do NOT organize by data source - organize by THEME
 - Do NOT mention the day of the week
+- Use abbreviated month names: Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec
 - ACTION ITEMS should be genuinely useful - specific tools to try, projects to watch, investment angles
