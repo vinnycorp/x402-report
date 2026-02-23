@@ -5,7 +5,8 @@
 
 ## FORMAT:
 
-**x402 Daily Report: {MON} {DAY}, {YEAR} ⚡**
+**x402 Daily Report: {Month} {Day}, {Year} ⚡**
+(e.g. "Feb 23, 2026" — Month is the abbreviated month name, NOT the day of week)
 {N_ALERTS} alerts · {N_CASTS} casts · {N_TWEETS} tweets · {N_GITHUB_ISSUES} GitHub issues/PRs
 
 ━━━━━━━━━━━━━━━━━━━━
