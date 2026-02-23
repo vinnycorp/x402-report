@@ -57,6 +57,7 @@
 - Emojis YES in ACTION ITEMS
 - No line breaks between ACTION ITEMS
 - Line breaks between COMMUNITY & DISCUSSION items
+- Add a blank line after each numbered list item body (before the next numbered item)
 - Use - (dash) not — (em dash) in body text
 - Bold section headings
 - Bold author names in quotes
