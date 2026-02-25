@@ -13,20 +13,20 @@
 
 **NEW INTEGRATIONS & PRODUCTS**
 
-1\. **{Name}** | [1]({URL}) · [2]({URL})
+- **{Name}** | [1]({URL}) · [2]({URL})
 {2-3 sentences. What launched, who built it, why it matters for x402.}
 
-2\. **{Name}** | [1]({URL}) · [2]({URL})
+- **{Name}** | [1]({URL}) · [2]({URL})
 {2-3 sentences.}
 
 ━━━━━━━━━━━━━━━━━━━━
 
 **ECOSYSTEM & PROTOCOL UPDATES**
 
-1\. **{Name}** | [1]({URL}) · [2]({URL})
+- **{Name}** | [1]({URL}) · [2]({URL})
 {2-3 sentences. Spec changes, SDK updates, governance, infrastructure moves.}
 
-2\. **{Name}** | [1]({URL}) · [2]({URL})
+- **{Name}** | [1]({URL}) · [2]({URL})
 {2-3 sentences.}
 
 ━━━━━━━━━━━━━━━━━━━━
@@ -56,11 +56,10 @@
 - No emojis in section item names (except ACTION ITEMS)
 - Emojis YES in ACTION ITEMS
 - No line breaks between ACTION ITEMS
-- Line breaks between COMMUNITY & DISCUSSION items
-- Add a blank line after each numbered list item body (before the next numbered item)
+- Line breaks between all other bullet items (NEW INTEGRATIONS, ECOSYSTEM, COMMUNITY)
 - Use - (dash) not — (em dash) in body text
 - Bold section headings
-- Bold author names in quotes
+- Bold item names and author names in quotes
 - SYNTHESIZE across sources - if the same topic appears in Google Alerts, Farcaster, AND GitHub, consolidate into ONE item with links from all sources
 - Deduplicate aggressively - same story from different sources = one item, multiple links
 - Prioritize: new launches/integrations > protocol changes > community takes > speculation
