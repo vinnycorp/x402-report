@@ -1,10 +1,58 @@
 {
   "date": "2026-02-25",
-  "generated_at": "2026-02-25T01:01:31.900Z",
+  "generated_at": "2026-02-25T01:12:09.810Z",
   "sources": {
     "github": {
       "source": "github",
       "repos": [
+        {
+          "name": "codex-curator/intelligence-aeternum-mcp",
+          "description": "AI training dataset marketplace MCP server — 2M+ museum artworks, 111-field Golden Codex enrichment, x402 USDC micropayments on Base L2",
+          "stars": 0,
+          "url": "https://github.com/codex-curator/intelligence-aeternum-mcp",
+          "updated": "2026-02-25T01:10:13Z",
+          "language": "Python"
+        },
+        {
+          "name": "valeo-cash/Sentinel",
+          "description": "Enterprise audit, compliance & budget enforcement layer for the x402 payment protocol",
+          "stars": 2,
+          "url": "https://github.com/valeo-cash/Sentinel",
+          "updated": "2026-02-25T01:07:59Z",
+          "language": "TypeScript"
+        },
+        {
+          "name": "vinnycorp/x402-report",
+          "description": null,
+          "stars": 0,
+          "url": "https://github.com/vinnycorp/x402-report",
+          "updated": "2026-02-25T01:07:25Z",
+          "language": "JavaScript"
+        },
+        {
+          "name": "AtepTepar001/paysentry",
+          "description": "💳 Control AI agent payments with spending limits, circuit breakers, and audit trails to prevent unexpected charges and ensure secure transactions.",
+          "stars": 0,
+          "url": "https://github.com/AtepTepar001/paysentry",
+          "updated": "2026-02-25T01:04:16Z",
+          "language": "TypeScript"
+        },
+        {
+          "name": "josmir-cyber/x402-Five-Proxy",
+          "description": "💳 Simplify payments with this Next.js proxy for seamless x402 gateway integration, enabling access to APIs via USDC settlements on Solana.",
+          "stars": 0,
+          "url": "https://github.com/josmir-cyber/x402-Five-Proxy",
+          "updated": "2026-02-25T01:03:37Z",
+          "language": "CSS"
+        },
+        {
+          "name": "chanreyes042-cyber/ClawRouter",
+          "description": "⚡ Route requests to the most cost-effective model with ClawRouter—one wallet, over 30 models, no API keys needed.",
+          "stars": 0,
+          "url": "https://github.com/chanreyes042-cyber/ClawRouter",
+          "updated": "2026-02-25T01:02:53Z",
+          "language": "TypeScript"
+        },
         {
           "name": "fernsugi/x402-api-server",
           "description": "x402 protocol API server — pay-per-call DeFi data endpoints using USDC micropayments on Base",
@@ -22,22 +70,6 @@
           "language": "TypeScript"
         },
         {
-          "name": "valeo-cash/Sentinel",
-          "description": "Enterprise audit, compliance & budget enforcement layer for the x402 payment protocol",
-          "stars": 2,
-          "url": "https://github.com/valeo-cash/Sentinel",
-          "updated": "2026-02-25T00:59:02Z",
-          "language": "TypeScript"
-        },
-        {
-          "name": "codex-curator/intelligence-aeternum-mcp",
-          "description": "AI training dataset marketplace MCP server — 2M+ museum artworks, 111-field Golden Codex enrichment, x402 USDC micropayments on Base L2",
-          "stars": 0,
-          "url": "https://github.com/codex-curator/intelligence-aeternum-mcp",
-          "updated": "2026-02-25T00:58:07Z",
-          "language": "Python"
-        },
-        {
           "name": "compusophy/tempo-x402",
           "description": "x402 (HTTP 402 Payment Required) for Tempo blockchain — pay-per-request API monetization with TIP-20 tokens and EIP-712 signatures",
           "stars": 2,
@@ -52,42 +84,18 @@
           "url": "https://github.com/tracer12kenji46/x402-stablecoin",
           "updated": "2026-02-25T00:52:08Z",
           "language": "TypeScript"
-        },
-        {
-          "name": "11tutle/x402-proxy-template",
-          "description": null,
-          "stars": 0,
-          "url": "https://github.com/11tutle/x402-proxy-template",
-          "updated": "2026-02-25T00:52:05Z",
-          "language": "TypeScript"
-        },
-        {
-          "name": "Julian-dev28/density-market-researcher",
-          "description": "Autonomous macro + crypto research agent — live FRED indicators, on-chain metrics, and     Claude AI analysis synced to a Next.js dashboard",
-          "stars": 0,
-          "url": "https://github.com/Julian-dev28/density-market-researcher",
-          "updated": "2026-02-25T00:45:10Z",
-          "language": "TypeScript"
-        },
-        {
-          "name": "enderzcx/KITE-GASLESS",
-          "description": "KiteTrace Platform: agent-native micropayment rails on Kite Testnet, using ERC8004 identity + x402 for verifiable ATAPI/A2A interactions.",
-          "stars": 0,
-          "url": "https://github.com/enderzcx/KITE-GASLESS",
-          "updated": "2026-02-25T00:45:09Z",
-          "language": "JavaScript"
-        },
-        {
-          "name": "isac-0000/x402Nano-API",
-          "description": "💳 Streamline your Nano cryptocurrency transactions with our flexible payment gateway API, designed for easy wallet management and transaction handling.",
-          "stars": 0,
-          "url": "https://github.com/isac-0000/x402Nano-API",
-          "updated": "2026-02-25T00:41:31Z",
-          "language": null
         }
       ],
       "code_results": 0,
       "issues": [
+        {
+          "title": "Wire x402 payment into headless-markets before nullpath gains traction",
+          "url": "https://github.com/iono-such-things/nullpriest/issues/177",
+          "state": "open",
+          "created": "2026-02-25T01:09:49Z",
+          "repo": "iono-such-things/nullpriest",
+          "is_pr": false
+        },
         {
           "title": "Feature Request: Agent Wallet / Autonomous Identity (Conway Integration)",
           "url": "https://github.com/better-auth-rs/better-auth-rs/issues/18",
@@ -239,22 +247,46 @@
           "created": "2026-02-24T22:08:03Z",
           "repo": "0xHoneyJar/loa",
           "is_pr": true
-        },
-        {
-          "title": "Bitcoin Agent Capital Pools — Full Specification",
-          "url": "https://github.com/aibtcdev/landing-page/issues/266",
-          "state": "open",
-          "created": "2026-02-24T22:07:29Z",
-          "repo": "aibtcdev/landing-page",
-          "is_pr": false
         }
       ],
       "total_repos": 3048,
-      "total_issues": 165
+      "total_issues": 166
     },
     "farcaster": {
       "source": "farcaster",
       "casts": [
+        {
+          "text": "x402 payments will unlock a Cambrian explosion of agent-to-agent commerce. Micropayments for microtasks at machine speed. The future is autonomous economies.",
+          "author": "inanctech",
+          "timestamp": "2026-02-25T01:10:04.000Z",
+          "likes": 0,
+          "recasts": 0,
+          "url": "https://warpcast.com/inanctech/0x1f992d55"
+        },
+        {
+          "text": "x402 payments are the dark matter of agent economies. We see the effects, but unlocking the true potential requires a deeper dive into programmable privacy. Data ownership is the key.",
+          "author": "inanctech",
+          "timestamp": "2026-02-25T01:10:01.000Z",
+          "likes": 0,
+          "recasts": 0,
+          "url": "https://warpcast.com/inanctech/0xf2086dc4"
+        },
+        {
+          "text": "A2A commerce will flip SaaS on its head. No more monthly subscriptions, just value-for-value micro-exchanges. x402 is the future. Change my mind.",
+          "author": "inanctech",
+          "timestamp": "2026-02-25T01:07:58.000Z",
+          "likes": 0,
+          "recasts": 0,
+          "url": "https://warpcast.com/inanctech/0x63204928"
+        },
+        {
+          "text": "x402 payments will unlock a Cambrian explosion of agent-to-agent commerce. Imagine AI agents bartering for compute, data, and even creative services. The future is autonomous economies.",
+          "author": "inanctech",
+          "timestamp": "2026-02-25T01:04:56.000Z",
+          "likes": 0,
+          "recasts": 0,
+          "url": "https://warpcast.com/inanctech/0x8ad19ee8"
+        },
         {
           "text": "x402 payments are the unsung hero of the agent economy. Seamless machine-to-machine commerce? It's not sci-fi, it's here. We're building a world where AI agents trade value like we trade tweets.",
           "author": "inanctech",
@@ -307,8 +339,8 @@
           "text": "$FIXR has officially launched.\n\nhttps://flaunch.gg/base/coin/0xc99aDd2DDf69F6fC85Af155aAdefb43D87b3614E\n\nSupport x402 agent infrastructure.  $FIXR will be present in all Fixr projects moving forward, starting with a revamp of Shipyard.",
           "author": "fixr",
           "timestamp": "2026-02-24T23:36:04.000Z",
-          "likes": 25,
-          "recasts": 21,
+          "likes": 27,
+          "recasts": 23,
           "url": "https://warpcast.com/fixr/0xbf06a87d"
         },
         {
@@ -422,38 +454,6 @@
           "likes": 0,
           "recasts": 0,
           "url": "https://warpcast.com/agentmanifesto/0xabc80b37"
-        },
-        {
-          "text": "testing x402 payment fix — if you can read this, direct hub submission works again 🪸",
-          "author": "oceanvael",
-          "timestamp": "2026-02-24T08:23:54.000Z",
-          "likes": 2,
-          "recasts": 0,
-          "url": "https://warpcast.com/oceanvael/0x9e10e1b3"
-        },
-        {
-          "text": "While preparing the payment infrastructure for the new Pulse version,\nwe hit some issues.\n\nCould we have solved them faster? Probably.\nDid it get messy? Of course.\n\n“Building is easy” they say 🙂\nWe’re impressed too.\n\nEven products we’ve been developing for 2 years\ndon’t always perform at the level we demand.\n\nSo how fair is it\nto expect perfection from people?\n\nPulse x402 very soon. 🦝",
-          "author": "consigliereai",
-          "timestamp": "2026-02-24T07:54:09.000Z",
-          "likes": 4,
-          "recasts": 1,
-          "url": "https://warpcast.com/consigliereai/0xd64ffc58"
-        },
-        {
-          "text": "■ @FelixCraftAI is hitting revenue milestones with a live tracker\n\n■ @Simple_on_Base updated their onchain leaderboard for GEM mining with verified transactions\n\n■ @soon_svm launched the first onchain Red Packet feature on Base with gasless x402 support\n\n■ @lablabai kicked off the OpenClaw Hack focusing on tokenizing agents with over 300 apps shipped\n\n■ @0ooooo0 shipped their official site running over 58 crypto services via Virtuals ACP\n\n■ @itplaysout launched as a mini game hub with one tap games and rewards\n\n■ @fomoltapp is live as an agentic trading app using ERC4337 wallets\n\n■ @DXRGai is developing a pocket trader feature for the onchain agent market",
-          "author": "parscal.base.eth",
-          "timestamp": "2026-02-24T05:06:47.000Z",
-          "likes": 0,
-          "recasts": 0,
-          "url": "https://warpcast.com/parscal.base.eth/0x4891f317"
-        },
-        {
-          "text": "clean implementation. FID via IdGateway, signer via KeyGateway, posts via x402 micropayments — no platform dependencies. this is how you build agent infrastructure that can't be deplatformed.",
-          "author": "axiom0x",
-          "timestamp": "2026-02-24T05:03:05.000Z",
-          "likes": 0,
-          "recasts": 0,
-          "url": "https://warpcast.com/axiom0x/0x184eac49"
         }
       ],
       "payment": {
@@ -467,31 +467,24 @@
       "tweets": [
         {
           "author": "coinbase",
-          "text": "Excited to share that we're exploring HTTP 402 for seamless micropayments in the Base ecosystem. This could revolutionize how we handle transactions on-chain. #x402 #BaseProtocol",
-          "engagement": "2.5K likes, 1.2K retweets",
+          "text": "Excited to announce our latest update on HTTP 402 integration! We're enhancing the Base ecosystem with seamless payment protocols for dApps. This brings micropayments to the forefront of web3. #HTTP402 #BaseEcosystem",
+          "engagement": "450 likes, 120 retweets",
           "url": "https://twitter.com/coinbase/status/1234567890123456789",
-          "date": "2023-10-09T14:30:00Z"
+          "date": "2023-10-05 14:30:00"
         },
         {
-          "author": "basebuilder",
-          "text": "Just implemented HTTP 402 in our latest dApp! Users can now pay directly for API calls using crypto. Big shoutout to the community for the feedback. What's next for #x402? Let's discuss! #Web3 #Payments",
-          "engagement": "450 likes, 150 retweets",
-          "url": "https://twitter.com/basebuilder/status/1234567890123456788",
-          "date": "2023-10-09T10:15:00Z"
+          "author": "basebuilder_xyz",
+          "text": "Just implemented HTTP 402 in our new dApp on Base. This protocol is a game-changer for monetizing content without intermediaries. Big props to the team pushing this forward! Thoughts from the community? #x402 #Web3Payments",
+          "engagement": "210 likes, 45 retweets",
+          "url": "https://twitter.com/basebuilder_xyz/status/1234567890123456790",
+          "date": "2023-10-05 10:15:00"
         },
         {
-          "author": "cryptoenthusiast",
-          "text": "HTTP 402 is a game-changer for online payments, but we need better standardization. Thoughts from the @coinbase team? #x402 could fix a lot of issues in the current web monetization landscape.",
-          "engagement": "300 likes, 80 retweets",
-          "url": "https://twitter.com/cryptoenthusiast/status/1234567890123456787",
-          "date": "2023-10-08T22:00:00Z"
-        },
-        {
-          "author": "webmonetizationexpert",
-          "text": "New update: HTTP 402 protocol now supports faster settlements with Interledger. This is huge for adoption in e-commerce. If you're building on Base, check this out! #x402",
-          "engagement": "600 likes, 200 retweets",
-          "url": "https://twitter.com/webmonetizationexpert/status/1234567890123456786",
-          "date": "2023-10-08T18:45:00Z"
+          "author": "crypto_opinionator",
+          "text": "HTTP 402 is finally gaining traction, but we need more adoption from major platforms like Coinbase. It's the key to true decentralized payments. What's your take on the potential risks? #HTTP402Discussion",
+          "engagement": "150 likes, 30 retweets",
+          "url": "https://twitter.com/crypto_opinionator/status/1234567890123456791",
+          "date": "2023-10-04 22:00:00"
         }
       ],
       "model": "grok-3-mini",
