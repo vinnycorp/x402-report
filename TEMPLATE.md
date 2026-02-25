@@ -13,20 +13,20 @@
 
 **NEW INTEGRATIONS & PRODUCTS**
 
-- **{Name}** | [1]({URL}) · [2]({URL})
+1\. **{Name}** | [1]({URL}) · [2]({URL})
 {2-3 sentences. What launched, who built it, why it matters for x402.}
 
-- **{Name}** | [1]({URL}) · [2]({URL})
+2\. **{Name}** | [1]({URL}) · [2]({URL})
 {2-3 sentences.}
 
 ━━━━━━━━━━━━━━━━━━━━
 
 **ECOSYSTEM & PROTOCOL UPDATES**
 
-- **{Name}** | [1]({URL}) · [2]({URL})
+1\. **{Name}** | [1]({URL}) · [2]({URL})
 {2-3 sentences. Spec changes, SDK updates, governance, infrastructure moves.}
 
-- **{Name}** | [1]({URL}) · [2]({URL})
+2\. **{Name}** | [1]({URL}) · [2]({URL})
 {2-3 sentences.}
 
 ━━━━━━━━━━━━━━━━━━━━
@@ -56,7 +56,9 @@
 - No emojis in section item names (except ACTION ITEMS)
 - Emojis YES in ACTION ITEMS
 - No line breaks between ACTION ITEMS
-- Line breaks between all other bullet items (NEW INTEGRATIONS, ECOSYSTEM, COMMUNITY)
+- Line breaks between ALL list items (NEW INTEGRATIONS, ECOSYSTEM, COMMUNITY)
+- NEW INTEGRATIONS and ECOSYSTEM sections use numbered lists (1\. 2\. 3\. etc) with a blank line between each item
+- COMMUNITY uses bullet points (-) with a blank line between each item
 - Use - (dash) not — (em dash) in body text
 - Bold section headings
 - Bold item names and author names in quotes
